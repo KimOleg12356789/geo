@@ -13,6 +13,42 @@
     <link href="slick/slick.css" rel="stylesheet">
     <link href="slick/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <script type="text/javascript">
+
+    window.onload = function () {
+
+        var scr = $(".scroll");
+
+        scr.mousedown(function () {
+
+            var startX = this.scrollLeft + event.pageX;
+
+            var startY = this.scrollTop + event.pageY;
+
+            scr.mousemove(function () {
+
+                this.scrollLeft = startX - event.pageX;
+
+                this.scrollTop = startY - event.pageY;
+
+                return false;
+
+            });
+
+        });
+
+        $(window).mouseup(function () {
+
+            scr.off("mousemove");
+
+        });
+
+    }
+
+</script>
+
+
   </head>
 
   
@@ -818,527 +854,226 @@
         
       </header>
 
-      
-    
-
-    <section class="seeds">
+    <section class="years">
       <div class="container">
-        <ul>
-          <li>
-            <a href="#">
-              Главная
-            </a>
-          </li>
-          <li>
-            <p>
-              Лазерное 3D сканирование
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-      
-    <section class="laser_scanning">
-      <div class="container">
-        <h1 class="title2 title_center">
-          Лазерное 3D сканирование 
-        </h1>
-        <div class="laser_scanning_wrap">
-          <div class="laser_scanning_block">
-            <div class="laser_scanning_border">
-              <div>
-                <h3 class="topography_title">
-                  Что это такое
-                </h3>
-                <p class="topography_suptitle">
-                  Лазерное 3D сканирование – это современная технология создания 3D-модели здания и иных сооружений. В ее основе лазерный луч, который отражается от объекта. Лазерный 3D-сканер измеряет расстояние, пройденное лучом, и угол его отражения. За секунду он производит тысячи таких измерений, создавая облако точек, из которых и выстраивается трехмерная модель объекта. <br><br>Лазерное 3D-сканирование ускоряет сбор данных в поле для последующей их обработки в офисе. Что даёт возможность намного быстрее и эффективнее измерять и документировать данные о любых сооружениях или объектах. 3D сканирование позволяет не только сэкономить время выполнения полевых работ, но и снизить стоимость выполняемых работ при съемках сложных сооружений.
+        <div class="years_scroll scroll">
+          <div class="years_wrap">
+            <div class="years_title">
+              <h1>
+                каждый год - <span>новая вершина</span>
+              </h1>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute">
+                <img src="images/years_absolute.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2016
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  Работая в строительной компании, сплоченная команда геодезистов, решили создать своё юридическое лицо (ИП). Взяв на сопровождение первый крупный проект – строительство участка дороги на трассе М11, мы сделали важный шаг к основанию компании Sanush. <br><br>Наша главная специализация – инженерная геодезия. С ростом нашей компетентности увеличивались количество и масштабность проектов. Мы постоянно совершенствовались и развивались, обеспечивая высокие стандарты в каждом проекте.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute2">
+                <img class="years_absolute2_rotate" src="images/years_absolute2.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2017
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2018 году мы расширили список предоставляемых услуг, освоив области геодезических изысканий, аэрофотосъёмки и мониторинга зданий и сооружений. Наша команда посетила конференцию Intergeo в Штутгарте, где познакомилась с новейшими технологиями и методиками в сфере геодезии. <br><br>Мы внедрили современные методы управления проектами, улучшив тем самым качество и эффективность нашей работы.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute3">
+                <img src="images/years_absolute3.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2018
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2018 году мы расширили список предоставляемых услуг, освоив области геодезических изысканий, аэрофотосъёмки и мониторинга зданий и сооружений. Наша команда посетила конференцию Intergeo в Штутгарте, где познакомилась с новейшими технологиями и методиками в сфере геодезии. Мы также наладили сотрудничество с Московским государственным университетом геодезии и картографии (МИИГАиК), что позволило нам привлекать молодых специалистов. <br><br>Этот год стал для нас важным этапом в укреплении позиций на рынке и расширении нашей профессиональной компетенции.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute4">
+                <img src="images/years_absolute4.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2019
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2019 году мы начали активно участвовать в государственных и коммерческих закупках. Впервые за время существования Sanush мы выполнили работы в Европе, реализовав проект в Испании. Также мы освоили и запустили новое направление деятельности – наземное лазерное 3D сканирование. Особое достижение – применение уникального рюкзака Leica Pegasus в лазерном сканировании, что сделало нас единственными в России, использующими эту технологию. <br><br>Этот год стал значимым в расширении наших возможностей и международного присутствия.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute5">
+                <img src="images/years_absolute5.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2020
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  2020 год оказался ключевым для компании Sanush, ведь именно в этот период произошел значительный ребрендинг, подчеркивающий нашу новую фазу развития. Наша команда значительно усовершенствовала навыки в области лазерного сканирования, топосъемки, установки и определения пунктов ГРО и ПВО, а также аэрофотосъемки. В этом году мы внедрили пилотируемый самолет для воздушного лазерного сканирования, что существенно повысило точность и эффективность наших изысканий. <br><br>Sanush наладила сотрудничество с ведущими компаниями отрасли, такими как STRABAG, Jungheinrich, ГК “Садовое кольцо”, РЖД, Барин Хаус, ГК”МИЦ”, НИИЖБ, АО Научно-исследовательский центр “Строительство”, участвуя в масштабных проектах и поддерживая высокие стандарты профессионального исполнения. Этот год стал еще одним важным шагом в нашем стремлении к инновациям и качеству в сфере инженерной геодезии.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute6">
+                <img src="images/years_absolute6.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2021
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2021 году Sanush продолжила активное расширение своего международного присутствия, открыв представительство в Таджикистане. Мы также активно инвестировали в развитие наших кадровых ресурсов, проводя обучение специалистов в ведущих институтах, таких как Институты ФАЗО, чтобы обеспечить высочайший уровень профессиональной подготовки наших сотрудников. <br><br>Кроме того, Sanush успешно реализовала мониторинг Нурекской гидроэлектростанции, что подчеркивает нашу экспертизу в области сложных инженерных проектов и технического обеспечения крупных объектов инфраструктуры. <br>2021 год стал годом значимых достижений и новых горизонтов для Sanush, подтверждающих нашу репутацию надежного и инновационного партнера в сфере инженерной геодезии.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute7">
+                <img src="images/years_absolute7.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2022
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2022 году Sanush сосредоточилась на оптимизации своей глобальной стратегии, закрыв представительство в Украине. Этот шаг стал частью нашей стратегии рационализации и укрепления наших позиций на ключевых рынках. <br>Компания продолжает активно внедрять передовые технологии в области инженерной геодезии, расширяя спектр предоставляемых услуг и поддерживая высокие стандарты профессионализма. Наше упорство в достижении целей и стремление к инновациям остаются основными движущими силами нашего развития.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute8">
+                <img src="images/years_absolute8.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2023
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2023 году Sanush значительно увеличила штат сотрудников до 35 человек, открывая новые должности в области рекламы и продвижения компании. Мы успешно ведем работы по всей территории России, начиная с Санкт-Петербурга и заканчивая Ямало-Ненецким автономным округом, демонстрируя высокие стандарты профессионализма в каждом проекте <br><br>В 2023 году мы продолжили активное участие в международных форумах, включая посещение мероприятий в Германии, где обменивались опытом с ведущими геодезическими компаниями. Мы также получили ценный опыт от швейцарских коллег, что дополнило нашу профессиональную базу и способствовало дальнейшему развитию Sanush.
+                </p>
+              </div>
+            </div>
+            <div class="years_block">
+              <div class="years_absolute9">
+                <img src="images/years_absolute9.png" alt="">
+              </div>
+              <div class="years_width">
+                <div class="years_top">
+                  <h2 class="years_years">
+                    2024
+                  </h2>
+                  <p class="years_years_title">
+                    год
+                  </p>
+                </div>
+                <div class="years_restagle">
+                  <div class="years_ellipse">
+                    
+                  </div>
+                </div>
+                <p class="years_suptitle">
+                  В 2024 году Sanush продолжает занимать лидирующие позиции в области инженерной геодезии и топографии, осуществляя значимые инновации и профессиональный рост. Мы успешно внедрили передовые технологии лазерного сканирования и улучшили точность наших проектов. Наша команда активно работает над обновлением сайта компании, чтобы улучшить доступность информации и взаимодействие с клиентами.
                 </p>
               </div>
             </div>
           </div>
-          <div class="laser_scanning_block">
-            <div class="laser_scanning_inner">
-              <div class="laser_scanning_inner_block">
-                <div class="laser_scanning_img">
-                  <img src="images/laser_scanning_img.png" alt="">
-                </div>
-              </div>
-              <div class="laser_scanning_inner_block">
-                <div class="laser_scanning_img">
-                  <img src="images/laser_scanning_img2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-
-
-    <section class="laser_scanning_p">
-      <div class="container">
-        <div class="laser_scanning_p_wrap">
-          <div class="laser_scanning_p_block">
-            <h2 class="laser_scanning_p_title">
-              применяется <br>в различных <span>направлениях</span>
-            </h2>
-            <div class="laser_scanning_slayder">
-                <div class="slider laser_scanning_sl">
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Авиация, судостроение, автомобилестроение
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Архитектура и археология
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon2.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Деформационный мониторинг
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon3.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Съемка фасадов и реставрация объектов исторического наследия
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon4.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            BIM моделирование, создание трехмерных моделей объектов
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon5.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Съемка сложных инженерных сооружений: мостов, эстакад и тоннелей
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon6.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Съемка объектов дорожно–транспортной инфраструктуры
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon7.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Криминалистика. 3D модели места происшествия
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon8.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Съемка сложных промышленных объектов (заводы, НПЗ, металлургические комбинаты)
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon9.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="laser_scanning_slayder_block">
-                      <div class="laser_scanning_slayder_border">
-                        <div class="laser_scanning_slayder_flex">
-                          <h3 class="laser_scanning_slayder_title">
-                            Маркшейдерские работы: определение объемов горных выработок и резервуаров сложной формы
-                          </h3>
-                          <div class="laser_scanning_slayder_icon">
-                            <img src="images/laser_scanning_slayder_icon10.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="laser_scanning_p_inner">
-              <div class="laser_scanning_p_inner_block">
-                <div class="laser_scanning_p_img">
-                  <img src="images/laser_scanning_p_img.png" alt="">
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="laser_scanning_p_block">
-            <div class="laser_scanning_p_flex">
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      1
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle.svg" alt="">
-                    Архитектура и археология
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      2
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle2.svg" alt="">
-                    Съемка фасадов и реставрация объектов исторического наследия
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      3
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle3.svg" alt="">
-                    Съемка сложных инженерных сооружений: мостов, эстакад и тоннелей
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      4
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle4.svg" alt="">
-                    BIM моделирование, создание трехмерных моделей объектов
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      5
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle5.svg" alt="">
-                    Авиация, судостроение, автомобилестроение
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      6
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle6.svg" alt="">
-                    Съемка сложных промышленных объектов (заводы, НПЗ, <br>металлургические комбинаты)
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      7
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle7.svg" alt="">
-                    Съемка объектов дорожно–транспортной инфраструктуры
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      8
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle8.svg" alt="">
-                    Криминалистика. 3D модели места происшествия
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      9
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle9.svg" alt="">
-                    Деформационный мониторинг
-                  </p>
-                </div>
-              </div>
-              <div class="laser_scanning_p_flex_block">
-                <div class="laser_scanning_p_border">
-                  <div class="laser_scanning_p_absolute">
-                    <p class="laser_scanning_p_number">
-                      10
-                    </p>
-                  </div>
-                  <p class="laser_scanning_p_suptitle">
-                    <img src="images/laser_scanning_p_suptitle10.svg" alt="">
-                    Маркшейдерские работы: определение объемов горных <br>выработок и резервуаров сложной формы
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="laser_scanning_s">
-      <div class="container">
-        <div class="laser_scanning_s_border">
-          <h2 class="laser_scanning_s_title">
-            Преимущество лазерного 3D сканирования
-          </h2>
-          <div class="laser_scanning_s_wrap">
-            <div class="laser_scanning_s_block">
-              <ul class="laser_scanning_s_ul">
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Экономия времени и денег
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    Благодаря быстроте и точности 3D сканирования мы можем сократить сроки выполнения проекта и снизить расходы, связанные с повторными выездами и переработкой данных.
-                  </p>
-                </li>
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Высокая точность и детализация
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    Наше оборудование обеспечивает исключительную точность измерений, что критично для успешной реализации сложных инженерных и строительных проектов. Вы получите детализированные цифровые модели, которые минимизируют риски ошибок.
-                  </p>
-                </li>
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Удобство и безопасность
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    3D сканирование позволяет работать на расстоянии, снижая риски как для наших сотрудников, так и для заказчиков. Это особенно важно при обследовании опасных, труднодоступных или ветхих объектов, участков с интенсивным движением и объектов культурного наследия.
-                  </p>
-                </li>
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Визуализация и наглядность
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    Мы предоставляем трехмерные модели объектов, которые легко интерпретировать и использовать для презентаций, обсуждений и согласований. Это улучшает понимание проекта всеми участниками и ускоряет принятие решений.
-                  </p>
-                </li>
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Комплексное документирование
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    3D сканирование обеспечивает полную цифровую запись текущего состояния объекта, что полезно для будущих проверок, ремонтов или реконструкций. Это надежный способ сохранения данных на долгосрочную перспективу.
-                  </p>
-                </li>
-                
-              </ul>
-            </div>
-            <div class="laser_scanning_s_block">
-              <ul class="laser_scanning_s_ul">
-                
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Гибкость и универсальность
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    Наша технология подходит для различных типов объектов и задач: от архитектурных съемок до мониторинга инфраструктуры. Независимо от сложности вашего проекта, мы сможем предложить эффективное решение.
-                  </p>
-                </li>
-                <li class="laser_scanning_s_li">
-                  <p class="laser_scanning_s_title_border">
-                    Поддержка и сопровождение
-                  </p>
-                  <p class="laser_scanning_s_suptitle">
-                    Мы не просто выполняем сканирование, но и предоставляем полный спектр сопутствующих услуг, включая обработку данных, создание отчетов и консультации по использованию моделей. Вы получите комплексную поддержку на всех этапах проекта.
-                  </p>
-                </li>
-              </ul>
-              <div class="laser_scanning_s_img">
-                <img src="images/laser_scanning_s_img.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-      <section class="nine">
-        <div class="container">
-          <div class="nine_wrap">
-            <div class="nine_block">
-              <div class="nine_border">
-                
-                <div class="nine_zindex">
-                  <h2 class="nine_title">
-                    Запишитесь на 15-минутную <br>встречу в <span>Контур. Толк</span>
-                  </h2>
-                  <p class="nine_suptitle">
-                    С руководителем отдела и обсудите, как успешно <br>реализовать ваш проект
-                  </p>
-                  <form class="nine_inner">
-                    <div class="nine_inner_block nine_inner_block_lg">
-                      <input class="nine_input" type="text" placeholder="Как к вам обращаться?">
-                    </div>
-                    <div class="nine_inner_block">
-                      <input class="nine_input" type="text" placeholder="Ваш телефон">
-                    </div>
-                    <div class="nine_inner_block">
-                      <button class="nine_button">
-                        <span>
-                          Отправить
-                        </span>
-                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z" fill="#21A038"/>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="nine_chekbox">
-                      <p>
-                        Отправляя данные, вы соглашаетесь на обработку <a href="#">персональных данных</a>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="nine_block">
-              <div class="nine_border2">
-                <div class="nine_zindex">
-                  <h2 class="nine_title2">
-                    Обратная связь
-                  </h2>
-                  <p class="nine_suptitle2">
-                    У вас есть вопрос или вам нужна профессиональная консультация по услугам? 
-                  </p>
-                  <form class="nine_form">
-                    <div class="nine_form_wrap">
-                      <div class="nine_form_block">
-                        <div class="nine_form_width">
-                          <input class="nine_form_input" type="text" placeholder="Как к вам обращаться?">
-                        </div>
-                      </div>
-                      <div class="nine_form_block2">
-                        <div class="nine_form_width2">
-                          <input class="nine_form_input" type="text" placeholder="Телефон">
-                        </div>
-                      </div>
-                    </div>
-                    <textarea class="nine_form_textarea" rows="6" cols="35" name="text" placeholder="Ваш вопрос или предложение" width="100%"></textarea>
-                    <div class="nine_form_flex">
-                      <button class="nine_form_button">
-                        Отправить
-                      </button>
-                      <button class="nine_form_file">
-                        <img src="images/nine_form_file.svg" alt="">
-                        Прикрепить файл
-                      </button>
-                    </div>
-                    <div class="nine_form_chekbox_color">
-                      <p>
-                        Отправляя данные, вы соглашаетесь на обработку <a href="#">персональных данных</a>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>  
 
     <footer class="footer">
       <div class="container">
@@ -1731,6 +1466,7 @@
         }
       });
     </script>
+    
   </body>
 
   
